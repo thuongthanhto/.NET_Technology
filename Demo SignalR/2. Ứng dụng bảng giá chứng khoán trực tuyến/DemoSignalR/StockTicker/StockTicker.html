@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Cổ phiếu chứng khoáng</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <br />
+    <br />
+    <input type="button" id="open" value="Bắt đầu" />
+    <input type="button" id="close" value="Đóng" disabled="disabled" />
+    <input type="button" id="reset" value="Làm mới" />
+    <h2>Cổ phiếu chứng khoán</h2>
+    <div id="stockTable">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="width:10%">Ký hiệu</th>
+                    <th style="width:15%">Giá</th>
+                    <th style="width:15%">Giá khởi điểm</th>
+                    <th style="width:15%">Giá cao nhất</th>
+                    <th style="width:15%">Giá thấp nhất</th>
+                    <th style="width:15%">Thay đổi</th>
+                    <th style="width:15%">Chênh lệch (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="7">Đang tải dữ liệu.....</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="Scripts/jquery-1.6.4.min.js"></script>
+    <script src="Scripts/jquery.color-2.1.2.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.2.2.js"></script>
+    <script src="signalr/hubs"></script>
+    <script src="Scripts/app.js"></script>
+</body>
+</html>
